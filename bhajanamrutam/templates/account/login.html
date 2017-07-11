@@ -1,5 +1,35 @@
 {% extends 'base2.html' %}
 
 {% block content %}
-<h1>Login under contruction</h1>
+<br>
+<br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5 col-sm-offset-3">
+            <h1>Login</h1>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-sm-5 col-sm-offset-3">
+        <form>{% csrf_token %}
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            </div>
+                <br>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">#</span>
+                <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+            </div>
+                <br>
+
+            <input class='btn btn-primary' type="submit" value="Login" />
+        </form>
+        </div>
+
+    </div>
+</div>
+
 {% endblock %}
