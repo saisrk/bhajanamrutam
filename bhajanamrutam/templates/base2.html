@@ -30,7 +30,7 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -48,9 +48,9 @@
                 <li><a href="#contact">Contact</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
-                <li><a href="#">Logout</a></li>
+                <li class="active"><a href="/accounts/login/">Login</a></li>
+                <li><a href="/accounts/signup/">Signup</a></li>
+                <li><a href="/accounts/logout/">Logout</a></li>
               </ul>
             </div>
           </div>
@@ -58,7 +58,7 @@
 
       </div>
     </div>
-
+    {% block content %}
 
     <!-- Carousel
     ================================================== -->
@@ -114,6 +114,7 @@
             <!-- /.row -->
         </footer>
     </div>
+    {% endblock %}
     <!-- /.container -->
     <!-- jQuery -->
     <script src="{% static 'js/jquery.js' %}"></script>
